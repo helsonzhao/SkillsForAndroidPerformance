@@ -8,9 +8,9 @@ These skills are designed to be used by AI coding assistants or developers direc
 
 | Skill | Description | Status |
 |---|---|---|
-| [**diff-apks**](./diff-apks/SKILL.md) | Deep APK/AAB size analyzer and comparator. Breaks down APKs into business modules, SDKs, native libs, resources, and assets. Supports custom package classification via JSON. | ✅ Ready |
-| [**png-to-webp-converter**](./png-to-webp-converter/SKILL.md) | Workspace image scanner. Reports potential space savings from WebP conversion and optionally performs safe conversions or destructive in-place replacements. | ✅ Ready |
-| [**main-thread-analyze**](./main-thread-analyze/SKILL.md) | Logcat & Main thread performance analyzer. Extracts UI thread logs to identify slow Looper dispatches, frame drops, GC pauses, and ANR indicators. | ✅ Ready |
+| [**diff-apks**](./skills/diff-apks/SKILL.md) | Deep APK/AAB size analyzer and comparator. Breaks down APKs into business modules, SDKs, native libs, resources, and assets. Supports custom package classification via JSON. | ✅ Ready |
+| [**png-to-webp-converter**](./skills/png-to-webp-converter/SKILL.md) | Workspace image scanner. Reports potential space savings from WebP conversion and optionally performs safe conversions or destructive in-place replacements. | ✅ Ready |
+| [**main-thread-analyze**](./skills/main-thread-analyze/SKILL.md) | Logcat & Main thread performance analyzer. Extracts UI thread logs to identify slow Looper dispatches, frame drops, GC pauses, and ANR indicators. | ✅ Ready |
 
 > [!NOTE]
 > More performance optimization skills will be added soon!
@@ -34,17 +34,17 @@ All underlying scripts are written in Python 3.6+ and reside either in the skill
 
 #### Example: Analyzing an APK
 ```bash
-python3 diff-apks/apk_deep_analyzer.py /path/to/app-release.apk
+python3 skills/diff-apks/apk_deep_analyzer.py /path/to/app-release.apk
 ```
 
 #### Example: Scanning for PNG optimization
 ```bash
-python3 png-to-webp-converter/scripts/scan_png_cwebp.py /path/to/android/project
+python3 skills/png-to-webp-converter/scripts/scan_png_cwebp.py /path/to/android/project
 ```
 
 #### Example: Analyzing Main Thread Jank
 ```bash
-python3 main-thread-analyze/scripts/main_thread_analyzer.py /path/to/logcat.txt --threshold 32
+python3 skills/main-thread-analyze/scripts/main_thread_analyzer.py /path/to/logcat.txt --threshold 32
 ```
 
 ## 🤖 For AI Assistants
