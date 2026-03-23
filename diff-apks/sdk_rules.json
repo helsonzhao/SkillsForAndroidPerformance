@@ -1,0 +1,290 @@
+[
+    {
+        "pattern": "^Lcom/google/firebase/",
+        "category": "SDK: Firebase"
+    },
+    {
+        "pattern": "^Lcom/google/gms/",
+        "category": "SDK: GMS"
+    },
+    {
+        "pattern": "^Lcom/google/gson/",
+        "category": "SDK: Gson"
+    },
+    {
+        "pattern": "^Lcom/google/android/material/",
+        "category": "SDK: Material"
+    },
+    {
+        "pattern": "^Lcom/google/android/exoplayer",
+        "category": "SDK: ExoPlayer"
+    },
+    {
+        "pattern": "^Lcom/google/android/([^/]+)/",
+        "category": "SDK: Google Android {0}"
+    },
+    {
+        "pattern": "^Lcom/google/([^/]+)/",
+        "category": "SDK: Google {0}"
+    },
+    {
+        "pattern": "^Lcom/google/",
+        "category": "SDK: Google General"
+    },
+    {
+        "pattern": "^Landroidx/compose/",
+        "category": "SDK: Jetpack Compose"
+    },
+    {
+        "pattern": "^Landroidx/([^/]+)/",
+        "category": "SDK: AndroidX {0}"
+    },
+    {
+        "pattern": "^Landroidx/",
+        "category": "SDK: AndroidX"
+    },
+    {
+        "pattern": "^Landroid/support/",
+        "category": "SDK: Android Support"
+    },
+    {
+        "pattern": "^Landroid/",
+        "category": "SDK: Android Platform"
+    },
+    {
+        "pattern": "^Lokhttp3/",
+        "category": "SDK: OkHttp"
+    },
+    {
+        "pattern": "^Lretrofit2/",
+        "category": "SDK: Retrofit"
+    },
+    {
+        "pattern": "^Lokio/",
+        "category": "SDK: Okio"
+    },
+    {
+        "pattern": "^Lio/ktor/",
+        "category": "SDK: Ktor"
+    },
+    {
+        "pattern": "^Lio/reactivex/",
+        "category": "SDK: RxJava"
+    },
+    {
+        "pattern": "^Lkotlinx/coroutines/",
+        "category": "SDK: Kotlin Coroutines"
+    },
+    {
+        "pattern": "^Lkotlin/",
+        "category": "SDK: Kotlin StdLib"
+    },
+    {
+        "pattern": "^Lkotlinx/",
+        "category": "SDK: Kotlin Extensions"
+    },
+    {
+        "pattern": "^Lcom/bumptech/glide/",
+        "category": "SDK: Glide"
+    },
+    {
+        "pattern": "^Lcoil/",
+        "category": "SDK: Coil"
+    },
+    {
+        "pattern": "^Lcom/squareup/picasso/",
+        "category": "SDK: Picasso"
+    },
+    {
+        "pattern": "^Lcom/facebook/fresco/",
+        "category": "SDK: Fresco"
+    },
+    {
+        "pattern": "^Ldagger/",
+        "category": "SDK: Dagger"
+    },
+    {
+        "pattern": "^Ljavax/inject/",
+        "category": "SDK: Javax Inject"
+    },
+    {
+        "pattern": "^Lcom/facebook/",
+        "category": "SDK: Facebook"
+    },
+    {
+        "pattern": "^Lcom/appsflyer/",
+        "category": "SDK: AppsFlyer"
+    },
+    {
+        "pattern": "^Lcom/adjust/",
+        "category": "SDK: Adjust"
+    },
+    {
+        "pattern": "^Lcom/amplitude/",
+        "category": "SDK: Amplitude"
+    },
+    {
+        "pattern": "^Lcom/segment/",
+        "category": "SDK: Segment"
+    },
+    {
+        "pattern": "^Lcom/stripe/",
+        "category": "SDK: Stripe"
+    },
+    {
+        "pattern": "^Lcom/braintreepayments/",
+        "category": "SDK: Braintree"
+    },
+    {
+        "pattern": "^Lcom/klarna/",
+        "category": "SDK: Klarna"
+    },
+    {
+        "pattern": "^Lcom/paypal/",
+        "category": "SDK: PayPal"
+    },
+    {
+        "pattern": "^Lcom/alipay/",
+        "category": "SDK: Alipay"
+    },
+    {
+        "pattern": "^Lcom/mapbox/",
+        "category": "SDK: Mapbox"
+    },
+    {
+        "pattern": "^Lorg/osmdroid/",
+        "category": "SDK: OSMDroid"
+    },
+    {
+        "pattern": "^Lcom/airbnb/lottie/",
+        "category": "SDK: Lottie"
+    },
+    {
+        "pattern": "^Lcom/crashlytics/",
+        "category": "SDK: Crashlytics"
+    },
+    {
+        "pattern": "^Lio/sentry/",
+        "category": "SDK: Sentry"
+    },
+    {
+        "pattern": "^Ltimber/",
+        "category": "SDK: Timber"
+    },
+    {
+        "pattern": "^Lcom/squareup/moshi/",
+        "category": "SDK: Moshi"
+    },
+    {
+        "pattern": "^Lorg/json/",
+        "category": "SDK: JSON"
+    },
+    {
+        "pattern": "^Lcom/fasterxml/jackson/",
+        "category": "SDK: Jackson"
+    },
+    {
+        "pattern": "^Lkotlinx/serialization/",
+        "category": "SDK: Kotlin Serialization"
+    },
+    {
+        "pattern": "^Lcom/alibaba/fastjson/",
+        "category": "SDK: Fastjson"
+    },
+    {
+        "pattern": "^Lcom/tencent/",
+        "category": "SDK: Tencent"
+    },
+    {
+        "pattern": "^Lcom/alibaba/",
+        "category": "SDK: Alibaba"
+    },
+    {
+        "pattern": "^Lcom/huawei/",
+        "category": "SDK: Huawei"
+    },
+    {
+        "pattern": "^Lcom/xiaomi/",
+        "category": "SDK: Xiaomi"
+    },
+    {
+        "pattern": "^Lcom/vivo/",
+        "category": "SDK: Vivo"
+    },
+    {
+        "pattern": "^Lcom/oppo/",
+        "category": "SDK: Oppo"
+    },
+    {
+        "pattern": "^Lcom/meizu/",
+        "category": "SDK: Meizu"
+    },
+    {
+        "pattern": "^Lzendesk/",
+        "category": "SDK: Zendesk"
+    },
+    {
+        "pattern": "^Lcom/scwang/",
+        "category": "SDK: Scwang Utils"
+    },
+    {
+        "pattern": "^Lcom/youth/",
+        "category": "SDK: Youth Banner"
+    },
+    {
+        "pattern": "^Ltv/danmaku/",
+        "category": "SDK: Danmaku"
+    },
+    {
+        "pattern": "^Lcom/journeyapps/",
+        "category": "SDK: JourneyApps"
+    },
+    {
+        "pattern": "^Leu/davidea/",
+        "category": "SDK: Davidea"
+    },
+    {
+        "pattern": "^Lcom/mikepenz/",
+        "category": "SDK: Mikepenz"
+    },
+    {
+        "pattern": "^Lcom/flyco/",
+        "category": "SDK: Flyco"
+    },
+    {
+        "pattern": "^Lcom/caverock/",
+        "category": "SDK: Caverock"
+    },
+    {
+        "pattern": "^Lcom/github/",
+        "category": "SDK: Github Library"
+    },
+    {
+        "pattern": "^Lcom/jakewharton/",
+        "category": "SDK: JakeWharton Library"
+    },
+    {
+        "pattern": "^Ljunit/",
+        "category": "SDK: JUnit"
+    },
+    {
+        "pattern": "^Lorg/mockito/",
+        "category": "SDK: Mockito"
+    },
+    {
+        "pattern": "^Ljavax/annotation/",
+        "category": "SDK: Java Annotation"
+    },
+    {
+        "pattern": "^Lorg/",
+        "category": "SDK: Org Library"
+    },
+    {
+        "pattern": "^Lnet/",
+        "category": "SDK: Net Library"
+    },
+    {
+        "pattern": "^Lio/",
+        "category": "SDK: Io Library"
+    }
+]
