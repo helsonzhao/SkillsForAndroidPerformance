@@ -17,14 +17,6 @@ These skills are designed to be used by AI coding assistants or developers direc
 
 ## 🚀 Quick Start
 
-### Installation
-
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/helsonzhao/SkillsForAndroidPerformance.git
-cd SkillsForAndroidPerformance
-```
 
 ### Usage
 
