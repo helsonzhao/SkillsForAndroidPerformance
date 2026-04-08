@@ -395,11 +395,19 @@ def get_apk_analysis(apk_path, rules, silent=False):
                 file_name = file_info.filename
 
                 # 🚀 NEW: AAB module filter
-                # If it's an AAB, we only want to analyze the "base" module and global metadata
+                # If it's an AAB, we only want to analyze the "base" module and global metadata.
+                # Exclude BUNDLE-METADATA and BundleConfig.pb as they don't count towards the final package size.
                 if apk_path.lower().endswith('.aab'):
+                    # Skip metadata directory
+                    if file_name.startswith('BUNDLE-METADATA/'):
+                        continue
+                    # Skip root configuration file
+                    if file_name == 'BundleConfig.pb':
+                        continue
+
                     top_dir = file_name.split('/')[0]
-                    # Allowed top-level dirs in AAB: base, META-INF, BUNDLE-METADATA
-                    if top_dir not in ['base', 'META-INF', 'BUNDLE-METADATA'] and '/' in file_name:
+                    # Allowed top-level dirs in AAB: base, META-INF
+                    if top_dir not in ['base', 'META-INF'] and '/' in file_name:
                         continue # Skip split bundles (like feature/, frostfire/, invoice/)
 
                 file_size = file_info.compress_size
@@ -503,7 +511,8 @@ def get_apk_analysis(apk_path, rules, silent=False):
                         category = "Meta-INF"
                     elif parsed_name == "AndroidManifest.xml" or file_name.endswith("AndroidManifest.xml"):
                         category = "Manifest"
-                    elif parsed_name == "resources.arsc" or file_name.endswith("resources.arsc"):
+                    elif parsed_name == "resources.arsc" or file_name.endswith("resources.arsc") or \
+                         parsed_name == "resources.pb" or file_name.endswith("resources.pb"):
                         category = "Resources Index"
                     else:
                         # Fallback for remaining Other Files: break them down by extension

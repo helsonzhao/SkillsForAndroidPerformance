@@ -11,6 +11,7 @@ These skills are designed to be used by AI coding assistants or developers direc
 | [**diff-apks**](./skills/diff-apks/SKILL.md) | Deep APK/AAB size analyzer and comparator. Breaks down APKs into business modules, SDKs, native libs, resources, and assets. Supports custom package classification via JSON. | ✅ Ready |
 | [**png-to-webp-converter**](./skills/png-to-webp-converter/SKILL.md) | Workspace image scanner. Reports potential space savings from WebP conversion and optionally performs safe conversions or destructive in-place replacements. | ✅ Ready |
 | [**main-thread-analyze**](./skills/main-thread-analyze/SKILL.md) | Logcat & Main thread performance analyzer. Extracts UI thread logs to identify slow Looper dispatches, frame drops, GC pauses, and ANR indicators. | ✅ Ready |
+| [**analyze-hprof**](./skills/analyze-hprof/SKILL.md) | Universal Java/Android HPROF memory analyzer. Parses binary heap dumps to generate accurate instance and array histograms for OOM diagnostics. | ✅ Ready |
 
 > [!NOTE]
 > More performance optimization skills will be added soon!
@@ -37,6 +38,11 @@ python3 skills/png-to-webp-converter/scripts/scan_png_cwebp.py /path/to/android/
 #### Example: Analyzing Main Thread Jank
 ```bash
 python3 skills/main-thread-analyze/scripts/main_thread_analyzer.py /path/to/logcat.txt --threshold 32
+```
+
+#### Example: Analyzing HPROF Heap Dump
+```bash
+python3 skills/analyze-hprof/scripts/analyze_hprof.py /path/to/memory-std.hprof
 ```
 
 ## 🤖 For AI Assistants
